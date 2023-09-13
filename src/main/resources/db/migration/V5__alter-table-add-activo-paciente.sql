@@ -1,0 +1,1 @@
+ALTER TABLE vollmed_api.pacientes ADD activo TINYINT;
