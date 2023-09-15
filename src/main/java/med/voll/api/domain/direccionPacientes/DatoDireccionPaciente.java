@@ -1,5 +1,6 @@
 package med.voll.api.domain.direccionPacientes;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import jakarta.validation.constraints.NotBlank;
 
 public record DatoDireccionPaciente(
@@ -8,6 +9,7 @@ public record DatoDireccionPaciente(
         @NotBlank
         String distrito,
         @NotBlank
+        @JsonAlias("codigo_postal")
         String codigoPostal,
         @NotBlank
         String complemento,
